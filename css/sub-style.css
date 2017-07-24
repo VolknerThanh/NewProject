@@ -1,4 +1,97 @@
-* {
-	margin: 0;
-	padding: 0;
+
+.main-box{
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: 650px;
+	z-index: 10;
+}
+
+.sub-box{
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+	width: 100%;
+	height: 1500px;
+	position: absolute;
+	top: 2000px;
+	z-index: 10;
+}
+.sub-sub-box{
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 4000px;
+	z-index: 10;
+}
+.main-box p{
+	font-size: 25px;
+	color: #e2144e;
+	line-height: 50px;
+}
+
+#title_font{
+	font-size: 60px;
+	font-family: "Courier New";
+	font-weight: 900;
+	text-align: center;
+}
+
+.List-Items table{
+	border: 10px outset #ccc;
+	background-color: #ccc;
+	width: 50%;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	padding: 30px 60px;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.List-Items table:hover{
+	background-color: #bbb;
+	border: 10px ridge #bbb;
+}
+
+.List-Items td{
+	font-size: 30px;
+	font-weight: 900;
+	font-family: "initial";
+	color: #423e3e;
+	letter-spacing: 3px;
+	line-height: 45px;
+}
+.opacity{
+	opacity:0.75;
+	-webkit-backface-visibility:hidden;
+}
+.animate-opacity{
+	-webkit-animation:opac 0.8s;animation:opac 0.8s;
+}
+.area{
+	text-align: center;
+	padding: 15px 30px!important;
+	color: #fff;
+	background-color: #000;
+	font-size: 20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+	letter-spacing: 5px;
+	opacity: 0.8;
+}
+.display-middle{
+	position: absolute;
+	top:80%; 
+	left:50%; 
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	white-space:nowrap;
 }
