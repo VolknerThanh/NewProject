@@ -53,7 +53,8 @@
 	top: 60%;
 	left: 50%;
 	position: absolute;
-	padding: 30px 60px;
+	padding: 30px;
+	padding-left: 60px;
 	transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
 }
@@ -63,11 +64,11 @@
 }
 
 .List-Items td{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 900;
 	font-family: "initial";
 	color: #423e3e;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	line-height: 45px;
 }
 .opacity{
@@ -89,9 +90,28 @@
 }
 .display-middle{
 	position: absolute;
-	top:80%; 
 	left:50%; 
 	transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
 	white-space:nowrap;
+	z-index: 20;
+}
+.display-middle-1{
+	top:80%; 
+}
+.display-middle-2{
+	top: 260%;
+}
+#about{
+}
+.about-left{
+	padding: 0px 50% 10px 10px;
+	clear: left;
+	float: left;
+	box-sizing: border-box;
+	position: absolute;
+
+}
+.about-right{
+	padding: 0px 10px 10px 60%;
 }

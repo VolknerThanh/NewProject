@@ -183,6 +183,8 @@ body {
   text-shadow: 1px 1px 2px #666;
 }
 
+#texts{
+}
 
 .top-icon{
 	width: 30px;
@@ -244,11 +246,6 @@ body {
 	background-image: url('img/power button.jpg');
 	min-height: 1800px;
 }
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
 #Scroll-to-top-button{
 	color: black;
 	background-color: #004cff;
@@ -263,7 +260,6 @@ body {
 	border: none;
 	outline: none;
 	z-index: 99;
-	display: none;
   	box-shadow: 0 9px #999;
 }
 #Scroll-to-top-button:active{
