@@ -13,7 +13,7 @@
 
 .sub-box{
 	box-sizing: border-box;
-	background-color: white;
+	background-color: #efefef;
 	color: black;
 	font-size: 30px;
 	width: 100%;
@@ -28,7 +28,7 @@
 	color: black;
 	font-size: 30px;
 	width: 100%;
-	height: 800px;
+	height: 550px;
 	position: absolute;
 	top: 4000px;
 	z-index: 10;
@@ -57,10 +57,12 @@
 	padding-left: 60px;
 	transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
+	text-shadow: 2px 3px 2px gray;
 }
 .List-Items table:hover{
 	background-color: #bbb;
 	border: 10px ridge #bbb;
+	text-shadow: 1px 1px 2px gray;
 }
 
 .List-Items td{
@@ -102,16 +104,106 @@
 .display-middle-2{
 	top: 260%;
 }
-#about{
+.margin-right-15{
+	margin-right: 15px!important;
 }
+.about-icons{
+	font-size: 22px;
+	left: 20%;
+	top: 400px;
+	padding-left: 20%;
+	position: absolute;
+	color: gray!important;
+}
+.about-icons a{
+	color: gray!important;
+}
+.about-icons a:hover, .about-icons p:hover{
+	color: #180c47!important;
+}
+
+
 .about-left{
-	padding: 0px 50% 10px 10px;
+	padding: 0px 50% 0px 10px;
 	clear: left;
 	float: left;
 	box-sizing: border-box;
 	position: absolute;
-
 }
 .about-right{
-	padding: 0px 10px 10px 60%;
+	padding: 0px 10% 0px 55%;
+}
+.about-right p{
+	font-size: 22px;
+	line-height: 28px;
+}
+.about-skill{
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #770513;
+}
+.about-bottom{
+	padding: 0px 100px;
+	padding-top: 20px;
+	text-align: center;
+}
+.gray-box{
+	margin-top: 25px;
+	margin-left: 150px;
+	background-color: #ccc!important;
+}
+.black-box{
+	background-color: #3f3f3f;
+}
+.black-box p{
+	color:  white;
+	font-size: 20px;
+	padding: 3px 0px;
+}
+.skill-name{
+	float: left;
+	clear: left;
+	line-height: 150%;
+	font-size: 20px;
+}
+.contact-info{
+	padding: 50px 400px;
+	font-size: 22px;
+	color: gray;
+}
+.describe{
+	text-align: center;
+	float: left;
+	clear: left;
+	padding-right: 10px;
+}
+.notes{
+	padding-left: 450px;
+	font-size: 18px;
+	color: gray;
+}
+.email-texts{
+	line-height: 50px;
+	text-transform: lowercase;
+	color: white;
+	font-size: 20px;
+}
+.send-email{
+	text-align: center;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	background-color: #e2360f;
+	box-sizing: border-box;
+	border-radius: 20px;
+	right: 50%;
+	position: absolute;
+	box-shadow: 0px 0px 10px 1px black;
+}
+.send-email:hover{
+	background-color: #e2660e;
+	box-shadow: none;
 }
