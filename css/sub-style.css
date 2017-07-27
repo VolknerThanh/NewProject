@@ -207,3 +207,34 @@
 	background-color: #e2660e;
 	box-shadow: none;
 }
+
+input[type=text], select, textarea {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+	width: 75%;
+	padding: 12px;
+    padding-left: 20px;
+    margin: 10px 20px 20px 50px;
+    letter-spacing: 2px;
+    clear: left;
+    outline: none;
+    resize: vertical;
+}
+input[type=button] {
+	background-color: #1b7225;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px #999;
+    outline: none;
+    cursor: pointer;
+}
+input[type=button]:hover{
+	background-color: #4CAF50;
+}
+input[type=button]:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);x
+}
