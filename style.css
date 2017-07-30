@@ -42,6 +42,11 @@ body {
 	z-index: 1;
 	background-image: linear-gradient( 135deg, gray 0%, black 90%);
 }
+#linuxteam{
+	top: 2500px;
+	z-index: 1;
+	background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+}
 #header {
 	font-weight: 900;
 	font-size: 600%;
