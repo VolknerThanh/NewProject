@@ -21,3 +21,12 @@ function SearchKeyWordByInput(){
 	else
 		window.open(URLstring + content);
 }
+
+function HideArea1(){
+	document.getElementById('area1').style.display = "none";
+	document.getElementById('area2').style.display = "block";
+}
+function HideArea2(){
+	document.getElementById('area2').style.display = "none";
+	document.getElementById('area1').style.display = "block";
+}
