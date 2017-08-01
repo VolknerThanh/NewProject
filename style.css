@@ -20,35 +20,34 @@ body {
 
 /* === Header Style === */
 .header {
-	position: relative;
+	position: absolute;
 	box-sizing: border-box;
 	text-align: center;
 	padding: 80px 100px;
 	width: 100%;
 	clear: left;
-	position: relative;
 	z-index: 1;
 }
 #j2team{
 	background-image: linear-gradient( 135deg, #92FFC0 0%, #002661 100%);
 }
 #kteam{
-	top: 1150px;
+	top: 1450px;
 	z-index: 1;
 	background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
 }
 #hva{
-	top: 1900px;
+	top: 2460px;
 	z-index: 1;
 	background-image: linear-gradient( 135deg, gray 0%, black 90%);
 }
 #linuxteam{
-	top: 2500px;
+	top: 3400px;
 	z-index: 1;
 	background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
 }
 #sharekey{
-	top: 3550px;
+	top: 4730px;
 	z-index: 1;
 	background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
 }
@@ -71,6 +70,7 @@ body {
 	list-style-type: none;
 	text-align: center;
 	position: relative;
+	outline: none;
 }
 .Menu ul li {
 	width: 150px;

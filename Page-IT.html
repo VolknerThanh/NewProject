@@ -15,6 +15,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- JavaScript file -->
 	<script type="text/javascript" src="Script.js"></script>
+	<style type="text/css" media="screen">
+	    body {background: black;}
+        canvas {display: block;}
+	</style>
 </head>
 <body>
 	<!-- Menu Bar -->
@@ -58,15 +62,14 @@
 		</ul>
 	</div>
 
-	<a href="#top" class="top-icon" title=""></a>
+	<a href="#top" class="top-icon" title="top"></a>
 	<div>
-		<div id="top"></div>
+ 		<div id="top"></div>
 		<!-- header -->
 		<header class="header" id="j2team">
 			<p id="header">J2TEAM COMMUNITY</p>
 		</header>
-		
-		
+	<canvas id="c"></canvas>
 		<!-- Main Left -->
 		<div class="main-left">
 			<div id="intro">
@@ -363,8 +366,41 @@
 				</tbody>
 			</table>
 		</div>
-
-
 	</div>
+
+	<script type="text/javascript">
+	    
+		var c = document.getElementById("c");
+		var ctx = c.getContext("2d");
+		c.height = 5700;
+		c.width = window.innerWidth;
+		var code = "10 ";
+		code = code.split("");
+
+		var font_size = 10;
+		var columns = c.width/font_size;
+		var drops = [];
+		for(var x = 0; x < columns; x++)
+		    drops[x] = 10; 
+
+		function draw()
+		{
+		    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+		    ctx.fillRect(0, 0, c.width, c.height);
+		    
+		    ctx.fillStyle = "#0F0";
+		    ctx.font = font_size + "px arial";
+		    for(var i = 0; i < drops.length; i++)
+		    {
+		        var text = code[Math.floor(Math.random()*code.length)];
+		        ctx.fillText(text, i*font_size, drops[i]*font_size);
+		        if(drops[i]*font_size > c.height && Math.random() > 0.975)
+		            drops[i] = 0;
+		        drops[i]++;
+		    }
+		}
+
+		setInterval(draw, 5);
+	</script>
 </body>
 </html>
