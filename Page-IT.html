@@ -394,7 +394,7 @@
 										Linux Team VN
 									</a>
 									<div onclick="HideArea1();" class="btn btn-5">
-										[ more ]
+										-->
 									</div>
 								</div>
 
@@ -407,7 +407,7 @@
 									</a>
 									
 									<div onclick="HideArea2();" class="btn btn-5">
-										[ less ]
+										<--
 									</div>
 								</div>
 
@@ -423,7 +423,7 @@
 	    
 		var c = document.getElementById("c");
 		var ctx = c.getContext("2d");
-		c.height = 7000;
+		c.height = 7300;
 		c.width = window.innerWidth;
 		var code = "10 ";
 		code = code.split("");
@@ -451,7 +451,7 @@
 		    }
 		}
 
-		setInterval(draw, 5);
+		setInterval(draw, 0.01);
 	</script>
 </body>
 </html>
